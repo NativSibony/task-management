@@ -6,8 +6,8 @@ const router = Router();
 
 router.get('/tasks', async (req, res, next) => {
   try {
-    const users: Task[] = JSON.parse(readFileSync('../mock/tasks.json').toString());
-    res.json({ users });
+    const tasks: Task[] = JSON.parse(readFileSync('./mock/tasks.json').toString());
+    res.json(tasks);
   } catch (error) {
     next(error);
   }

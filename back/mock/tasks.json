@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Do my homework",
+    "status": 0,
+    "created": "Tue May 09 2023 22:44:06 GMT+0300 (Israel Daylight Time)",
+    "assignee": "Nativ",
+    "linked_tasks": [
+      {
+        "id": 2,
+        "title": "Clean my room",
+        "status": 3,
+        "created": "Tue May 09 2023 22:44:06 GMT+0300 (Israel Daylight Time)",
+        "assignee": "Adam"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Take the dog",
+    "status": 3,
+    "created": "Tue May 09 2023 22:44:06 GMT+0300 (Israel Daylight Time)",
+    "assignee": "Adam",
+    "linked_tasks": []
+  },
+  {
+    "id": 3,
+    "title": "Clean my room",
+    "status": 1,
+    "created": "Tue May 09 2023 22:44:06 GMT+0300 (Israel Daylight Time)",
+    "assignee": "Danielle",
+    "linked_tasks": []
+  },
+  {
+    "id": 4,
+    "title": "Wash my car",
+    "status": 2,
+    "created": "Tue May 09 2023 22:44:06 GMT+0300 (Israel Daylight Time)",
+    "assignee": "Roy",
+    "linked_tasks": []
+  }
+]
