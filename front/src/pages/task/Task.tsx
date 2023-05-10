@@ -19,9 +19,9 @@ function Task({ id, title, created, status, assignee }: TaskType) {
             alignItems={'center'}
             justifyContent={'space-between'}
             columnGap={4}
-            minW={'40'}
             borderLeft={'1px solid'}
             borderColor={'gray.200'}
+            w={'40'}
             p={4}
           >
             <Button variant='outline' _hover={{}} fontSize={'sm'} colorScheme={'gray'}>

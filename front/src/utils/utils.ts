@@ -1,7 +1,12 @@
 import { TaskStatus } from '../types/task.type';
 
-export function getParsedDate(date: number | Date | undefined) {
-  return new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Australia/Sydney' }).format(date);
+export function getParsedDate(date: string | undefined) {
+  if (!date) return '';
+
+  const parsedDate = new Date(date);
+  return new Intl.DateTimeFormat('en-GB', { dateStyle: 'medium', timeStyle: 'short', timeZone: 'Australia/Sydney' }).format(
+    parsedDate
+  );
 }
 
 export function getStatusText(status: TaskStatus): string {

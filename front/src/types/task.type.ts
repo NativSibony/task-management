@@ -2,9 +2,9 @@ export type Task = {
   id: number;
   title: string;
   status: TaskStatus;
-  description?: string;
+  description?: string | undefined;
   assignee?: string;
-  created: number | Date | undefined;
+  created: string;
   linked_tasks?: Task[];
 };
 

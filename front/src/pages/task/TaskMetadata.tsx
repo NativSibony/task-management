@@ -4,7 +4,7 @@ import { getParsedDate } from '../../utils/utils';
 type TaskMetadata = {
   title: string;
   assignee: string | undefined;
-  created: number | undefined | Date;
+  created: string;
 };
 
 function TaskMetadata({ title, assignee, created }: TaskMetadata) {

@@ -7,12 +7,11 @@ import TaskDetails from './pages/taskDetails/TaskDetails';
 function App() {
   return (
     <>
-      <Container maxW={'80ch'} className='w-full h-full flex justify-center items-center'>
+      <Container maxW={'100ch'} className='w-full h-full flex justify-center items-center'>
         <Routes>
           <Route path='/' element={<Tasks />} />
           <Route path='/tasks' element={<Tasks />} />
           <Route path='/tasks/:id' element={<TaskDetails />} />
-          <Route path='/create' element={<Tasks />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </Container>
