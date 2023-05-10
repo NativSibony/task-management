@@ -12,8 +12,6 @@
 
 ## Run This Project:
 
----
-
 #### **Front**
 
 1. `cd front`
