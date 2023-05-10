@@ -15,9 +15,11 @@
 #### **Front**
 
 1. `cd front`
-2. `npm run dev`
+2. `npm install`
+3. `npm run dev`
 
 #### **Front**
 
 1. `cd back`
-2. `npm run dev (you might need to build first `npm run build`)`
+2. `npm install`
+3. `npm run dev (you might need to build first `npm run build`)`
