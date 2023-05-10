@@ -138,7 +138,7 @@ function CreateTask({ users, isOpen, onClose }: CreateTaskType) {
                     focusBorderColor={'gray.200'}
                     _focus={{ backgroundColor: 'gray.200' }}
                     variant='filled'
-                    placeholder='Filled'
+                    placeholder='Description'
                     onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setTaskDescription(e.target.value)}
                   />
                 </FormControl>
