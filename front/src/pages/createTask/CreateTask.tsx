@@ -22,8 +22,7 @@ import {
   TabPanel,
   Spinner,
 } from '@chakra-ui/react';
-import Select, { PropsValue } from 'react-select';
-import makeAnimated from 'react-select/animated';
+import Select, { MultiValue } from 'react-select';
 import { useState, useEffect, ChangeEvent } from 'react';
 import { User } from '../../types/user.type';
 import TaskButton from '../../components/TaskButton';
@@ -37,13 +36,6 @@ type CreateTaskType = {
   onClose: () => void;
   users: User[];
 };
-
-type SelectTaskList = {
-  value: any;
-  label: string;
-};
-
-const animatedComponents = makeAnimated();
 
 function CreateTask({ users, isOpen, onClose }: CreateTaskType) {
   const toast = useToast();
@@ -64,8 +56,6 @@ function CreateTask({ users, isOpen, onClose }: CreateTaskType) {
   }, []);
 
   const onSave = async () => {
-    console.log(linkedTasks);
-
     if (taskTitle && taskDescription && assignee) {
       setIsLoading(true);
       toast({
@@ -96,7 +86,7 @@ function CreateTask({ users, isOpen, onClose }: CreateTaskType) {
     }
   };
 
-  const handleLinkedTaskChange = (selected: SelectTaskList[]) => {
+  const handleLinkedTaskChange = (selected: MultiValue<{ value: TaskType; label: string }>) => {
     const task: TaskType[] = selected && selected.map((select) => select.value);
     setLinkedTasks([...task]);
   };
