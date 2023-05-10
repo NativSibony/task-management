@@ -24,7 +24,7 @@ function Tasks() {
   }, []);
 
   return (
-    <Flex flexDirection={'column'} justifyContent={'center'} w={'full'} mt={40}>
+    <Flex flexDirection={'column'} justifyContent={'center'} w={'full'}>
       <Flex w={'full'} justifyContent={'space-between'} alignItems={'center'} mb={4}>
         <Text fontSize='2xl' textAlign={'left'} className='text-gray-600 font-semibold'>
           Tasks

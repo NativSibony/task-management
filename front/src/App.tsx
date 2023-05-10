@@ -7,7 +7,7 @@ import TaskDetails from './pages/taskDetails/TaskDetails';
 function App() {
   return (
     <>
-      <Container maxW={'100ch'} className='w-full h-full flex justify-center items-center'>
+      <Container display={'flex'} justifyContent={'center'} paddingBlock={10} maxW={'100ch'}>
         <Routes>
           <Route path='/' element={<Tasks />} />
           <Route path='/tasks' element={<Tasks />} />
